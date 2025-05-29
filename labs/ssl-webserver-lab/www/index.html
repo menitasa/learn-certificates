@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSL Lab - Secure Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .secure-indicator {
+            background: #e8f5e9;
+            border: 1px solid #4caf50;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .padlock {
+            color: #4caf50;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>SSL Lab - Secure Website</h1>
+    
+    <div class="secure-indicator">
+        <span class="padlock">🔒</span> This page is being served securely over HTTPS!
+    </div>
+
+    <h2>What's Happening?</h2>
+    <p>
+        This webpage is being served over a secure HTTPS connection using:
+        <ul>
+            <li>A self-signed SSL certificate</li>
+            <li>Python's built-in HTTP server with SSL/TLS</li>
+            <li>Port 4443 for secure communication</li>
+        </ul>
+    </p>
+
+    <h2>Certificate Details</h2>
+    <p>
+        You can view the certificate details by:
+        <ol>
+            <li>Clicking the padlock icon in your browser's address bar</li>
+            <li>Selecting "Certificate" or "Connection is secure"</li>
+            <li>Reviewing the certificate information</li>
+        </ol>
+    </p>
+
+    <h2>Why the Security Warning?</h2>
+    <p>
+        Your browser showed a security warning because we're using a self-signed certificate.
+        In production, you would use a certificate from a trusted Certificate Authority (CA).
+    </p>
+</body>
+</html> 
