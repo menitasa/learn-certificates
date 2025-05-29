@@ -1,4 +1,4 @@
-# certificates-101
+# Certificates-101
 
 A hands-on guide and lab collection for learning about digital certificates, PKI, and TLS/SSL. This repository provides practical labs, certificate examples, and documentation to help you understand and experiment with certificate management and secure communications.
 
